@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testng Cucumber Suite" duration-ms="93495" started-at="2020-03-25T16:20:54 EET" finished-at="2020-03-25T16:22:28 EET">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Run All Tests" duration-ms="93495" started-at="2020-03-25T16:20:54 EET" finished-at="2020-03-25T16:22:28 EET">
+      <class name="SampleTestCucumber.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="setUpClass" is-config="true" duration-ms="235" started-at="2020-03-25T16:20:54 EET" finished-at="2020-03-25T16:20:55 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="initialization" is-config="true" duration-ms="62440" started-at="2020-03-25T16:20:55 EET" finished-at="2020-03-25T16:21:57 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="runScenario" duration-ms="14268" started-at="2020-03-25T16:21:57 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-25T16:22:11 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit a Success Feedback with comment and valid attachments"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Incident"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="runScenario" duration-ms="9427" started-at="2020-03-25T16:22:12 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-25T16:22:21 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit a Success Feedback with comment and valid attachments"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Incident"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Thank you for your message!] but found [Dear Customer,]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Thank you for your message!] but found [Dear Customer,]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:42)
+at SampleTestCucumber.StepDefs.FunctionalTestStepDefs.he_should_be_navigated_to_success_page_with_message(FunctionalTestStepDefs.java:76)
+at ✽.he should be navigated to success page with message "Thank you for your message!"(src/test/java/Features/FunctionalTest.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="runScenario" duration-ms="3033" started-at="2020-03-25T16:22:21 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-25T16:22:24 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Perform Get request and verify that response return the valid Authorization value"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Incident"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="runScenario" duration-ms="1920" started-at="2020-03-25T16:22:24 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-25T16:22:26 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Perform Post request and verify that response return the valid Attachment ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Incident"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="runScenario" duration-ms="927" started-at="2020-03-25T16:22:26 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-25T16:22:27 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Perform Post request and verify that response return the note status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Incident"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="tearDown" is-config="true" duration-ms="275" started-at="2020-03-25T16:22:27 EET" finished-at="2020-03-25T16:22:27 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:SampleTestCucumber.TestRunner@33c7e1bb]" name="tearDownClass" is-config="true" duration-ms="735" started-at="2020-03-25T16:22:27 EET" finished-at="2020-03-25T16:22:28 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- SampleTestCucumber.TestRunner -->
+    </test> <!-- Run All Tests -->
+  </suite> <!-- Testng Cucumber Suite -->
+</testng-results>

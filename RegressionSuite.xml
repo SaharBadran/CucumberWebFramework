@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegressionSuite" thread-count="1" verbose="1">
+    <test name="RegressionTest">
+        <classes>
+        <!--Add Your Test Classes-->
+        <!--  <class name="Demo.FunctionalTest"/>-->
+        
+        <class
+				name="Demo.GetValidTicketStatusAPI" />
+			<class
+				name="Demo.PostValidAttachmentAPI" />
+			<class
+				name="Demo.PostNoteAPI" />
+           <!-- <class name="SampleNormalTests.SampleTest"/>
+            <class name="SampleNormalTests.VisualTestSearch"/>
+             <class name="SampleNormalTests.VisualTestGMail"/>-->
+        </classes>
+      
+        
+    </test>
+</suite>

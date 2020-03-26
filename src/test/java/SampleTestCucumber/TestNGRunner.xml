@@ -1,0 +1,7 @@
+<suite name="Testng Cucumber Suite">
+    <test name="Run All Tests">
+        <classes>
+            <class name="SampleTestCucumber.TestRunner"></class>
+        </classes>
+    </test>
+</suite>
